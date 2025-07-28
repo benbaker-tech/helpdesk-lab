@@ -1,0 +1,13 @@
+**User"** Sarah Smith
+**Issue:** User reported "Access Denied" when trying to access shared folder '\DC!\AccountingDocs'
+**Root Cause:** User was not part of the security group that had access to the folder 
+**Resolution:** 
+  -Created 'Accounting' AD security group
+  -Assigned proper share and NTFS permissions to 'AccountingDocs' for the group
+  -Added user 'sarah.smith' to the 'Accounting' group 
+  -Logged into Client machine as Sarah and verified access 
+  -Ran 'whoami' and confirmed domain identiy
+  -Folder opened successfully 
+
+**Status:** Resolved 
+**Resolution Time:** 10 mins. 
