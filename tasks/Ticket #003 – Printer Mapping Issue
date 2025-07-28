@@ -1,0 +1,12 @@
+**User:** Mike Brown  
+**Issue:** User could not find or print to the office printer. Reported it had disappeared from Devices and Printers.  
+**Root Cause:** Printer mapping was removed from client system (possible logoff, policy, or manual removal)  
+**Resolution:**  
+- Created and shared printer "OfficePrinter01" from server using Microsoft XPS Class Driver  
+- Verified share availability via `\\DC1`  
+- Logged into client machine as mike.brown  
+- Mapped shared printer manually from network path  
+- Confirmed visibility in Devices and Printers
+
+**Status:** Resolved  
+**Resolution Time:** 7 minutes  
